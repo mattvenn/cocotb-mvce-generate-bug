@@ -13,7 +13,7 @@ async def test(dut):
     # change False to True below to make the test pass
     if False:
         for thing in dut:
-            thing._log.info("Found something: %s" % thing._fullname)
+            pass
 
     await RisingEdge(dut.clk)
     print(dut.genblk1[0].sub_inst.clk.value)
